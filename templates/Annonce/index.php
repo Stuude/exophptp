@@ -15,7 +15,7 @@ foreach ($annonces as $annonce) {
                 <h5 class="card-title"><?= $annonce->name ?></h5>
                 <p class="card-text"><?= $annonce->description ?></p>
 
-                <form action="/cart/add" method="POST">
+                <form action="/favorite/add" method="POST">
                     <input type="hidden" name="id" value=" <?= $article->id ?>">
                     <button type="submit" class="btn btn-danger">Ajouter au favoris</button>
                    
